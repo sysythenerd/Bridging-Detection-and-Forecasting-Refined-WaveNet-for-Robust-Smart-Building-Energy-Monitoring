@@ -1,1 +1,2 @@
 # Bridging-Detection-and-Forecasting-Refined-WaveNet-for-Robust-Smart-Building-Energy-Monitoring
+A **Refined Gated WaveNet architecture** is used in this project to detect anomalies in univariate energy consumption data without supervision. Time series from smart building sensors are used to test the method, which is trained solely on normal data and assessed against artificial anomaly injections.
