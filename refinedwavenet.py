@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 
 
 # Load Data
-train_df = pd.read_csv('/content/data/train.csv')
-test_df = pd.read_csv('/content/data/test.csv')
-labels_df = pd.read_csv('/content/data/test_label.csv')
+train_df = pd.read_csv('/train.csv')
+test_df = pd.read_csv('/test.csv')
+labels_df = pd.read_csv('/test_label.csv')
 
 # Normalize using training statistics
 mean, std = train_df['TOTALDEMAND'].mean(), train_df['TOTALDEMAND'].std()
@@ -198,7 +198,7 @@ import numpy as np
 from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score, average_precision_score
 
 # Compute 90th percentile as the anomaly detection threshold
-best_threshold = np.percentile(errors, 91)
+best_threshold = np.percentile(errors, 90)
 print(f"✅ 90th Percentile Threshold Found: {best_threshold:.4f}")
 
 # Anomaly Detection
