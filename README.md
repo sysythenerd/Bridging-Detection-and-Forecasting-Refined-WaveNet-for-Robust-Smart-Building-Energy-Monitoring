@@ -5,7 +5,7 @@ A **Refined Gated WaveNet architecture** is used in this paper to detect anomali
 
 **Structure**: WaveNet featuring a refinement head based on GRU or CNN, dilated causal convolutions, skip connections, and gated activations.
 
-*Learning Setting**: Completely unsupervised; only normal data is used to train the model.
+**Learning Setting**: Completely unsupervised; only normal data is used to train the model.
 
 **Output**: Export of anomaly indices and detection of anomalies using evaluation metrics.
 
